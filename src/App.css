@@ -36,3 +36,91 @@
     transform: rotate(360deg);
   }
 }
+
+.Gradient-text {
+  font-size: 25px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4285F4, #A64AC9, #FF4D4D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Gradient-text-table{
+    font-size: 10px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #4285F4, #A64AC9, #FF4D4D);
+}
+
+.Table-text-table {
+  color: white;
+}
+
+p {
+  margin: 0;
+  /* Reset default margin */
+  padding: 0;
+  /* Reset padding */
+}
+
+/* Assuming a container with the class 'container' */
+/* Assuming a container with the class 'container' */
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #673AB7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+  /* Adjust height based on your images */
+}
+
+.marquee {
+  display: flex;
+  animation: infinite-scroll 10s linear infinite;
+}
+
+.marquee img {
+  width: 200px;
+  /* Adjust width */
+  height: 200px;
+  /* Adjust height */
+  flex-shrink: 0;
+  /* Prevent shrinking */
+}
+
+/* Keyframes for infinite scroll */
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
